@@ -1,0 +1,48 @@
+.CheckoutTable {
+  --border: solid 2px #e6dee9;
+  display: grid;
+  border: var(--border);
+  border-radius: 8px;
+  background-color: var(--color-white);
+}
+
+.CheckoutTable tr {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: 70px 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr 1fr 100px;
+  align-items: center;
+  justify-items: center;
+  padding-block: 15px;
+}
+
+.CheckoutTable thead > tr {
+  height: 70px;
+}
+
+.CheckoutTable tbody > tr {
+  border-top: var(--border);
+}
+
+.CheckoutTable tbody > tr:hover {
+  background-color: #d8d1db;
+}
+
+.CheckoutTable th {
+  font-weight: 800;
+}
+
+.CheckoutTable th,
+.CheckoutTable td {
+  padding-inline: 5px;
+}
+
+.actions {
+  justify-self: start;
+}
+
+.button {
+  all: unset;
+  line-height: 0;
+  width: 30px;
+  cursor: pointer;
+}
