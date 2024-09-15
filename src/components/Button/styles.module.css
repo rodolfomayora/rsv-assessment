@@ -1,0 +1,28 @@
+.Button {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center center;
+  column-gap: 12px;
+  height: 62px;
+  padding-inline: 18px;
+  border: solid 2px transparent;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-white);
+  fill: var(--color-white);
+  background-color: var(--color-purple-light);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.Button:hover {
+  background-color: var(--color-yellow-light);
+}
+
+.Button:disabled {
+  color: #696b6c;
+  fill: #696b6c;
+  background-color: #adaeb2;
+  cursor: not-allowed;
+}
