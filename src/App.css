@@ -4,12 +4,6 @@
   min-height: 100svh;
 } */
 
-.layout {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  min-height: calc(100svh - var(--desktop-header-height));
-}
-
 .main {
   display: grid;
   align-content: start;
