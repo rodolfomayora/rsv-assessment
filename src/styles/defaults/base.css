@@ -1,0 +1,32 @@
+@layer defaults.base {
+  *:focus-visible {
+    outline: solid #111111 2px;
+  }
+
+  *:not(svg, svg *, img, canvas, video) {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    font-family: var(--font-urbanist), Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--color-blue-2);
+    min-height: 100svh;
+    min-width: var(--min-mobile-width);
+  }
+  
+  img {
+    all: revert;
+    max-inline-size: 100%; /* max-width: 100% */
+    block-size: auto;      /* height: auto */
+  }
+
+  a {
+    cursor: pointer;
+    line-height: 0;
+  }
+
+  button, label, img, a {
+    user-select: none;
+  }
+}
