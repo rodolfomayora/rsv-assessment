@@ -1,0 +1,86 @@
+.Header {
+  display: flex;
+  align-items: center;
+  padding-inline: 38px;
+  /* height: 90px; */
+  /* height: 104px; */
+  height: var(--desktop-header-height);
+  box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.381);
+  background-color: var(--color-white);
+}
+
+.Header > * + * {
+  margin-left: 42px;
+}
+
+/* hacer breakpoint para 1440px  */
+
+.logo {
+  width: 170px;
+  height: auto;
+}
+
+.title {
+  border-left: solid 4px #e6deeb;
+  padding-left: 34px;
+  font-size: 32px;
+  line-height: 64px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 36px;
+  margin-left: auto;
+}
+
+.messages {
+  --height: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  column-gap: 10px;
+  height: var(--height);
+  padding-inline: 18px;
+  border-radius: calc(var(--height) / 1);
+  border: solid 2px var(--color-black);
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.platform {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  column-gap: 12px;
+}
+
+.wallet {
+  --height: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  column-gap: 10px;
+  height: var(--height);
+  border-radius: calc(var(--height) / 1);
+  border-color: transparent;
+  padding-inline: 14px;
+  font-weight: 600;
+  color: var(--color-black);
+  background-color: #e6deeb;
+}
+
+.picture {
+  aspect-ratio: 1 / 1;
+  height: fit-content;
+  width: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  background-color: var(--color-yellow-light);
+  color: var(--color-white);
+  display: grid;
+  place-content: center center;
+  font-size: 28px;
+  font-weight: 600;
+}
