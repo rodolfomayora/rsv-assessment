@@ -22,10 +22,12 @@
     
     /* Primary Colors */
     --color-white: #fefefe;
+    --color-black: #222222;
     --color-purple-extra-light: #f8f5fa;
     --color-purple-light: #865e9b;
     --color-purple-medium: #432f4e;
     --color-purple-dark: #2d1f34;
+    --color-yellow-light: #edc0ab;
 
     /* Container */
     --min-mobile-width: var(--minMobile);
