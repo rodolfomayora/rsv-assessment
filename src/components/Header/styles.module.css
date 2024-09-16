@@ -1,5 +1,8 @@
 .Header {
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  z-index: 0;
   display: flex;
   align-items: center;
   padding-inline: 38px;
@@ -38,7 +41,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   place-items: center;
-  column-gap: 10px;
+  column-gap: 28px;
   height: var(--height);
   padding-inline: 18px;
   border-radius: calc(var(--height) / 1);

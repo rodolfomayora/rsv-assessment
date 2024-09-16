@@ -14,7 +14,7 @@
     min-height: 100svh;
     min-width: var(--min-mobile-width);
   }
-
+  
   /* #root {
     display: grid;
     place-content: center center;

@@ -12,7 +12,7 @@ export function CheckoutFilters () {
       <SearchInput />
       <ButtonOutlined>
         <span>Filter</span>
-        <FilterIcon width={24} />
+        <FilterIcon width={28} />
       </ButtonOutlined>
       <ButtonOutlined>
         <span>Sort</span>

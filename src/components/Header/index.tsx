@@ -15,7 +15,7 @@ export function Header () {
       <Logo className={styles.logo} />
       <h1 className={styles.title}>Checkout</h1>
       <div className={styles.wrapper}>
-        <CloudIcon height={20} fill="#adaeb2" />
+        <CloudIcon height={24} fill="#adaeb2" />
         <div className={styles.messages}>
           <div className={styles.platform}>
             <EmailIcon width={18} />
@@ -26,7 +26,7 @@ export function Header () {
             <span>400</span>
           </div>
           <div className={styles.platform}>
-            <WhatsappIcon height={18} />
+            <WhatsappIcon width={16} />
             <span>200</span>
           </div>
         </div>

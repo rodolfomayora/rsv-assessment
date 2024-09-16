@@ -5,7 +5,7 @@
   border-color: var(--color-purple-light);
   color: var(--color-purple-light);
   fill: var(--color-purple-light);
-  background-color: #f7f5fa;
+  background-color: transparent;
 }
 
 .ButtonOutlined:hover {
