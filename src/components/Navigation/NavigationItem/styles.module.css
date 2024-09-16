@@ -14,10 +14,14 @@
   transition: all .2s ease-in-out;
 }
 
+
 .NavigationItem:hover {
   background-color: var(--color-white);
   color: var(--color-black);
   fill: var(--color-black);
-  /* transform: translateX(15px); */
-  transform: scale(1.08);
+  scale: 1.08;
 }
+
+/* .NavigationItem:active {
+  translate: 15px;
+} */
