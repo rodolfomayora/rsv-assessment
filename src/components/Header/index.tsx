@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { routes } from '#/config/routes';
 import Logo from '#/assets/svg/reservi-logo.svg?react';
 import WhatsappIcon from '#/assets/svg/whatsapp-brands-solid.svg?react';
 import EmailIcon from '#/assets/svg/envelope-regular.svg?react';
@@ -9,13 +11,19 @@ import CloudIcon from '#/assets/svg/cloud-solid.svg?react';
 import { UserPicture } from './UserPicture';
 import styles from './styles.module.css';
 
-export function Header () {
+type Props = {
+  pageTitle: string
+}
+
+export function Header ({ pageTitle }: Props) {
   return (
     <header className={styles.Header}>
-      <Logo className={styles.logo} />
-      <h1 className={styles.title}>Checkout</h1>
+      <Link className={styles.link} to={routes.root}>
+        <Logo className={styles.logo} />
+      </Link>
+      <h1 className={styles.title}>{pageTitle}</h1>
       <div className={styles.wrapper}>
-        <CloudIcon height={24} fill="#adaeb2" />
+        <CloudIcon height={24} fill="var(--color-gray-light)" />
         <div className={styles.messages}>
           <div className={styles.platform}>
             <EmailIcon width={18} />

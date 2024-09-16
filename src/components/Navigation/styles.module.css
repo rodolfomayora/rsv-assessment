@@ -13,6 +13,10 @@
   list-style: none;
 }
 
+.list a {
+  text-decoration: none;
+}
+
 .separator {
   width: 54px;
   height: 2px;
