@@ -1,16 +1,17 @@
-import Icon from '#/assets/svg/cube-solid.svg?react';
+import EditIcon from '#/assets/svg/pen-solid.svg?react';
+// import BillIcon from '#/assets/';
 import styles from './styles.module.css';
 
-type BasicInvoice = {
-  id: string,
-  clientName: string,
-  description: string,
-  type: 'poduct' | 'service' | 'voucher',
-  bookingDate: string,
-  purchaseTime: string,
-  price: number,
-  status: 'draft' | 'updaid' | 'paid',
-}
+// type BasicInvoice = {
+//   id: string,
+//   clientName: string,
+//   description: string,
+//   type: 'poduct' | 'service' | 'voucher',
+//   bookingDate: string,
+//   purchaseTime: string,
+//   price: number,
+//   status: 'draft' | 'updaid' | 'paid',
+// }
 
 export function CheckoutTable () {
 
@@ -26,7 +27,7 @@ export function CheckoutTable () {
       <td>Draft</td>
       <td className={styles.actions}>
         <button className={styles.button}>
-          <Icon height={30} />
+          <EditIcon height={20} />
         </button>
       </td>
     </tr>

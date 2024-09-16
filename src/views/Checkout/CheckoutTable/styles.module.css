@@ -38,6 +38,7 @@
 
 .actions {
   justify-self: start;
+  display: grid;
 }
 
 .button {
