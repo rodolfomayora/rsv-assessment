@@ -1,8 +1,14 @@
 .Checkout {
+  --border: solid 2px #e6dee9;
+  display: grid;
+  /* grid-template-columns: 1fr 400px; */
+  grid-template-columns: 1fr min(34%, 602px);
+}
+
+.table {
   display: grid;
   align-content: start;
   row-gap: 32px;
   padding: 32px;
-  max-width: 1212px;
   background-color: #f7f5fa;
 }
