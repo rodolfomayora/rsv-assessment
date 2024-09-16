@@ -25,7 +25,7 @@
 }
 
 .input::placeholder {
-  color: #adaeb2;
+  color: var(--color-gray-light);
 }
 
 .button {

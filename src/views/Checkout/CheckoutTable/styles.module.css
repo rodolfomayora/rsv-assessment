@@ -23,12 +23,34 @@
   border-top: var(--border);
 }
 
+.CheckoutTable tbody {
+  max-height: 120svh;
+  overflow-y: scroll;
+}
+
 .CheckoutTable tbody > tr:hover {
   background-color: #d8d1db;
 }
 
+.CheckoutTable tbody::-webkit-scrollbar {
+  width: 4px;
+}
+
+.CheckoutTable tbody::-webkit-scrollbar-track {
+  background-color: var(--color-purple-exta-light);
+}
+
+.CheckoutTable tbody::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--color-purple-light);
+}
+
 .CheckoutTable th {
   font-weight: 800;
+}
+
+.CheckoutTable td {
+  font-weight: 500;
 }
 
 .CheckoutTable th,

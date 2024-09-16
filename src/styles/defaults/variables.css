@@ -13,7 +13,6 @@
   }
 }
 
-
 @layer defaults.variables {
   :root {
     /* fonts (custom font names) */
@@ -28,6 +27,8 @@
     --color-purple-medium: #432f4e;
     --color-purple-dark: #2d1f34;
     --color-yellow-light: #edc0ab;
+    --color-gray-light: #adaeb2;
+    --color-gray-dark: #696b6c;
 
     /* Container */
     --min-mobile-width: var(--minMobile);

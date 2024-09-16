@@ -15,8 +15,8 @@
 }
 
 .ButtonOutlined:disabled {
-  color: #adaeb2;
-  fill: #adaeb2;
+  color: var(--color-gray-light);
+  fill: var(--color-gray-light);
+  border-color: var(--color-gray-light);
   background-color: var(--color-white);
-  border-color: #adaeb2;
 }

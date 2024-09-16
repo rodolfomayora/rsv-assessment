@@ -22,8 +22,8 @@
 }
 
 .Button:disabled {
-  color: #696b6c;
-  fill: #696b6c;
-  background-color: #adaeb2;
+  color: var(--color-gray-dark);
+  fill: var(--color-gray-dark);
+  background-color: var(--color-gray-light);;
   cursor: not-allowed;
 }

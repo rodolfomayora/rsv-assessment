@@ -15,7 +15,7 @@ const router = createBrowserRouter(
       {/* temporal root routing to checkout */}
       <Route path={routes.root} element={<Navigate replace to={routes.checkout} />} />
       <Route index path={routes.checkout} element={<Checkout />} />
-      <Route path={routes.calendar} element={<PlaceholderPage pageTitle="calendar" />} />
+      <Route path={routes.calendar} element={<PlaceholderPage pageTitle="Calendar" />} />
       <Route path={routes.clients} element={<PlaceholderPage pageTitle="Clients" />} />
       <Route path={routes.forms} element={<PlaceholderPage pageTitle="Forms" />} />
       <Route path={routes.marketing} element={<PlaceholderPage pageTitle="Marketing" />} />

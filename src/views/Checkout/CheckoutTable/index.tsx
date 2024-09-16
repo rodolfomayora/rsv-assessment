@@ -27,7 +27,7 @@ export function CheckoutTable () {
       <td>Draft</td>
       <td className={styles.actions}>
         <button className={styles.button}>
-          <EditIcon height={20} />
+          <EditIcon height={24} />
         </button>
       </td>
     </tr>
