@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "modern-normalize": "3.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.26.2"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
@@ -19,7 +20,7 @@
     "@vitejs/plugin-react": "^4.3.1",
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
-    "vite": "^5.4.1",
+    "vite": "5.4.1",
     "vite-plugin-svgr": "4.2.0",
     "vite-tsconfig-paths": "5.0.1"
   }
