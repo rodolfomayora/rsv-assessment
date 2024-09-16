@@ -1,8 +1,8 @@
 .Header {
+  position: relative;
   display: flex;
   align-items: center;
   padding-inline: 38px;
-  /* height: 90px; */
   /* height: 104px; */
   height: var(--desktop-header-height);
   box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.381);
@@ -13,11 +13,10 @@
   margin-left: 42px;
 }
 
-/* hacer breakpoint para 1440px  */
-
 .logo {
   width: 170px;
   height: auto;
+  cursor: pointer;
 }
 
 .title {
@@ -43,22 +42,22 @@
   height: var(--height);
   padding-inline: 18px;
   border-radius: calc(var(--height) / 1);
-  border: solid 2px var(--color-black);
+  border: solid 2px var(--color-purple-dark);
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-purple-dark);
+  fill: var(--color-purple-dark);
 }
 
 .platform {
   display: grid;
-  grid-template-columns: auto auto;
-  place-items: center;
+  grid-template-columns: max-content auto;
   column-gap: 12px;
 }
 
 .wallet {
   --height: 40px;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: max-content auto;
   place-items: center;
   column-gap: 10px;
   height: var(--height);
@@ -66,21 +65,24 @@
   border-color: transparent;
   padding-inline: 14px;
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--color-purple-dark);
+  fill: var(--color-purple-dark);
   background-color: #e6deeb;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
-.picture {
-  aspect-ratio: 1 / 1;
-  height: fit-content;
-  width: 64px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
+.wallet:hover {
   background-color: var(--color-yellow-light);
-  color: var(--color-white);
-  display: grid;
-  place-content: center center;
-  font-size: 28px;
-  font-weight: 600;
+}
+
+.search,
+.notifications {
+  all: unset;
+  line-height: 0;
+  width: max-content;
+  height: 30px;
+  color: var(--color-purple-light);
+  fill: var(--color-purple-light);
+  cursor: pointer;
 }
