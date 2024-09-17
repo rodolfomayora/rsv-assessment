@@ -1,0 +1,8 @@
+.CheckoutFilters {
+  display: flex;
+  column-gap: 30px;
+}
+
+.CheckoutFilters :last-child {
+  margin-left: auto;
+}

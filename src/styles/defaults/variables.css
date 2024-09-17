@@ -1,0 +1,41 @@
+@layer defaults.variables {
+  :root {
+    --minMobile : 375px;
+    --maxDesktop: 1920px;
+
+    /* Mobile First breakpoints */
+    --minTablet : 768px;  /* medium */
+    --minDesktop: 1024px; /* large */
+
+    /* Desktop First breakpoints */
+    --maxMobile : 767px;  /* small */
+    --maxTablet : 1023px; /* medium */
+  }
+}
+
+@layer defaults.variables {
+  :root {
+    /* fonts (custom font names) */
+    --font-public-sans: "Public Sans";
+    --font-urbanist: "Urbanist";
+    
+    /* Primary Colors */
+    --color-white: #fefefe;
+    --color-black: #222222;
+    --color-purple-extra-light: #f8f5fa;
+    --color-purple-semi-light: #e6dee9;
+    --color-purple-light: #865e9b;
+    --color-purple-medium: #432f4e;
+    --color-purple-dark: #2d1f34;
+    --color-yellow-light: #edc0ab;
+    --color-gray-light: #adaeb2;
+    --color-gray-dark: #696b6c;
+
+    /* Container */
+    --min-mobile-width: var(--minMobile);
+
+    /* header */
+    --mobile-header-height: 64px;
+    --desktop-header-height: 104px;
+  }
+}

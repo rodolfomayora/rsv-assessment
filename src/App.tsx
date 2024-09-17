@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+  Route,
+  Navigate
+} from 'react-router-dom';
+import { Checkout } from './views/Checkout';
+import { PlaceholderPage } from './components/PlaceholderView/indext';
+import { routes } from './config/routes';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+const router = createBrowserRouter(
+  createRoutesFromElements(
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* temporal root routing to checkout */}
+      <Route path={routes.root} element={<Navigate replace to={routes.checkout} />} />
+      <Route index path={routes.checkout} element={<Checkout />} />
+      <Route path={routes.calendar} element={<PlaceholderPage pageTitle="Calendar" />} />
+      <Route path={routes.clients} element={<PlaceholderPage pageTitle="Clients" />} />
+      <Route path={routes.forms} element={<PlaceholderPage pageTitle="Forms" />} />
+      <Route path={routes.marketing} element={<PlaceholderPage pageTitle="Marketing" />} />
+      <Route path={routes.products} element={<PlaceholderPage pageTitle="Products" />} />
+      <Route path={routes.reports} element={<PlaceholderPage pageTitle="Reports" />} />
+      <Route path={routes.services} element={<PlaceholderPage pageTitle="Services" />} />
+      <Route path={routes.settings} element={<PlaceholderPage pageTitle="Settings" />} />
     </>
   )
-}
+)
 
-export default App
+export function App () {
+  return <RouterProvider router={router} />
+}

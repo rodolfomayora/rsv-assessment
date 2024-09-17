@@ -1,0 +1,22 @@
+@import "/src/components/Button/styles.module.css";
+
+.ButtonOutlined {
+  composes: Button;
+  border-color: var(--color-purple-light);
+  color: var(--color-purple-light);
+  fill: var(--color-purple-light);
+  background-color: transparent;
+}
+
+.ButtonOutlined:hover {
+  color: var(--color-white);
+  fill: var(--color-white);
+  background-color: var(--color-purple-light);
+}
+
+.ButtonOutlined:disabled {
+  color: var(--color-gray-light);
+  fill: var(--color-gray-light);
+  border-color: var(--color-gray-light);
+  background-color: var(--color-white);
+}

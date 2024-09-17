@@ -1,0 +1,68 @@
+.CheckoutTable {
+  --border: solid 2px var(--color-purple-semi-light);
+  display: grid;
+  border: var(--border);
+  border-radius: 8px;
+  background-color: var(--color-white);
+}
+
+.CheckoutTable tr {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: 70px 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr 1fr 100px;
+  align-items: center;
+  justify-items: center;
+  padding-block: 15px;
+}
+
+.thead tr {
+  height: 70px;
+}
+
+.tbody tr {
+  border-top: var(--border);
+}
+
+.tbody tr:hover {
+  background-color: var(--color-purple-semi-light);
+}
+
+.tbody {
+  max-height: 120svh;
+  overflow-y: scroll;
+}
+
+.tbody::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tbody::-webkit-scrollbar-track {
+  background-color: var(--color-purple-exta-light);
+}
+
+.tbody::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--color-purple-light);
+}
+
+.thead th {
+  font-weight: 800;
+  padding-inline: 5px;
+}
+
+.tbody td {
+  font-weight: 500;
+  padding-inline: 5px;
+}
+
+.actions {
+  justify-self: start;
+  display: grid;
+}
+
+.button {
+  all: unset;
+  line-height: 0;
+  width: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+.Navigation {
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: var(--color-purple-medium);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 22px;
+  margin: 0;
+  padding: 16px 10px;
+  list-style: none;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.separator {
+  width: 54px;
+  height: 2px;
+  margin-inline: auto;
+  background-color: var(--color-purple-extra-light);
+}

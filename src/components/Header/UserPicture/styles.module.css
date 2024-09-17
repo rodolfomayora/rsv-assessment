@@ -1,0 +1,15 @@
+.UserPicture {
+  aspect-ratio: 1 / 1;
+  height: fit-content;
+  width: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  background-color: var(--color-yellow-light);
+  color: var(--color-white);
+  display: grid;
+  place-content: center center;
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
