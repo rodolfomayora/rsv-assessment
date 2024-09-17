@@ -1,5 +1,5 @@
 .CheckoutTable {
-  --border: solid 2px #e6dee9;
+  --border: solid 2px var(--color-purple-semi-light);
   display: grid;
   border: var(--border);
   border-radius: 8px;
@@ -15,46 +15,43 @@
   padding-block: 15px;
 }
 
-.CheckoutTable thead > tr {
+.thead tr {
   height: 70px;
 }
 
-.CheckoutTable tbody > tr {
+.tbody tr {
   border-top: var(--border);
 }
 
-.CheckoutTable tbody {
+.tbody tr:hover {
+  background-color: var(--color-purple-semi-light);
+}
+
+.tbody {
   max-height: 120svh;
   overflow-y: scroll;
 }
 
-.CheckoutTable tbody > tr:hover {
-  background-color: #d8d1db;
-}
-
-.CheckoutTable tbody::-webkit-scrollbar {
+.tbody::-webkit-scrollbar {
   width: 4px;
 }
 
-.CheckoutTable tbody::-webkit-scrollbar-track {
+.tbody::-webkit-scrollbar-track {
   background-color: var(--color-purple-exta-light);
 }
 
-.CheckoutTable tbody::-webkit-scrollbar-thumb {
+.tbody::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: var(--color-purple-light);
 }
 
-.CheckoutTable th {
+.thead th {
   font-weight: 800;
+  padding-inline: 5px;
 }
 
-.CheckoutTable td {
+.tbody td {
   font-weight: 500;
-}
-
-.CheckoutTable th,
-.CheckoutTable td {
   padding-inline: 5px;
 }
 

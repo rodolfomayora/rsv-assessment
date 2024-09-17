@@ -1,0 +1,10 @@
+.NoResults {
+  display: grid;
+  place-items: center center;
+  height: 400px;
+  border: solid 2px var(--color-purple-semi-light);
+  border-radius: 8px;
+  font-size: 18px;
+  color: var(--color-purple-dark);
+  background-color: var(--color-white);
+}
